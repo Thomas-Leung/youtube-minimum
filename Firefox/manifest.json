@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Minimum",
+  "version": "0.1.0",
+  "description": "Only focus on the video you watch.",
+  "icons": {
+    "48": "assets/temp_app_icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}

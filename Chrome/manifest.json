@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Minimum",
+  "version": "0.1.0",
+  "description": "Only focus on the video you watch.",
+  "permissions": ["tabs"],
+  "host_permissions": ["https://*.youtube.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "icons": {
+    "48": "assets/temp_app_icon.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "assets/temp_app_icon.png",
+      "24": "assets/temp_app_icon.png",
+      "32": "assets/temp_app_icon.png"
+    },
+    "default_title": "YouTube Focus Title",
+    "default_popup": "popup.html"
+  }
+}
