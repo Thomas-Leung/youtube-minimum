@@ -3,6 +3,11 @@
   "name": "YouTube Minimum",
   "version": "0.1.0",
   "description": "Only focus on the video you watch.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "addon@example.com"
+    }
+  },  
   "icons": {
     "48": "assets/temp_app_icon.png"
   },
