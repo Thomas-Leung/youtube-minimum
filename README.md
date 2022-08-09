@@ -34,7 +34,9 @@ Note: Since it is not published on Firefox Add-ons, due to security reasons, Fir
 
 2. Create the build
    
-   Download this repo, go to Firefox folder, then compress all files inside that folder, you will receive a zip file.
+   Download this repo, go to Firefox folder, then compress all files inside that folder, you will receive a zip file. 
+   
+   (Or you can use `web-ext build --verbose` in termainl, you need to install web-ext CLI)
 
 3. Install
    
